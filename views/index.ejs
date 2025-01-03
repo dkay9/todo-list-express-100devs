@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<!DOCTYPE html> <!-- Telling the web browser which type of document the page is written in -->
+<html lang="en"> <!-- Starting the html tag and setting the language to English -->
+<head> <!-- Starting head tag to store meta data -->
+    <meta charset="UTF-8"> <!-- Indicates what character set should be used -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Sets appropriate compatibility for Microsoft browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the width of available viewing area to the width of the device screen -->
+    <title>Document</title> <!-- Assign a title that appears on the browser tab -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Creates a link to the font awesome icon library -->
+    <link rel="stylesheet" href="css/style.css"><!-- Creates a link to the local css file int the public folder -->
+</head> <!-- Closing the head tag -->
 <body> <!-- Main section for our content displayed -->
     <h1>Todo List: </h1> <!-- Main title displayed on page -->
     <ul class="todoItems"><!-- Create unordered list and assign class to it -->
@@ -23,16 +23,16 @@
     <% } %> <!-- EJS to close the for loop -->
     </ul> <!-- Closing the unordered list -->
 
-    <h2>Left to do: <%= left %></h2>
+    <h2>Left to do: <%= left %></h2> <!-- Creates a second level heading tag with text and using EJS to display a variable showing how many tasks are left to complete -->
 
-    <h2>Add A Todo:</h2>
+    <h2>Add A Todo:</h2> <!-- Create a second level header for the from elemnt below -->
 
-    <form action="/addTodo" method="POST">
-        <input type="text" placeholder="Thing To Do" name="todoItem">
-        <input type="submit">
-    </form>
+    <form action="/addTodo" method="POST"> <!-- Create a form with a post method that goes to the /addTodo route -->
+        <input type="text" placeholder="Thing To Do" name="todoItem"> <!-- Create an input box that accpets text with placeholder and a name for reference later-->
+        <input type="submit"> <!-- Submit button for the form -->
+    </form> <!-- Closing the form tag -->
     
 
-    <script src='js/main.js'></script>
+    <script src='js/main.js'></script> <!-- Links to the main.js file in the js folder which is the public folder -->
 </body>
 </html>
